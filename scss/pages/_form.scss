@@ -1,0 +1,29 @@
+@use '../base/reset';
+
+.form-section-title {
+    margin-bottom: 40px;
+    background-color: reset.$color-brand-secondary;
+    border: 2px solid black;
+    padding: 10px 0;
+}
+
+form {
+    padding: 30px;
+    div {
+        padding-bottom: 30px;
+    }
+    label {
+        font-size: 1.2rem;
+    }
+    .form-control {
+        border: 1px solid rgb(202, 201, 201);
+        border-radius: 0;
+    }
+    .form-select {
+        border: 1px solid rgb(202, 201, 201);
+        border-radius: 0;
+    }
+    .form-check-input {
+        border: 1.5px solid rgb(201, 201, 201);
+    }
+}

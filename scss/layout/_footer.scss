@@ -1,0 +1,10 @@
+@use '../base/reset';
+// FOOTER
+footer {
+    background-color: reset.$bg-light;
+    .icon {
+        .bi {
+            font-size: 25px;
+        }
+    }
+}

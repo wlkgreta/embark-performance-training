@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Embark Performance Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/custom.css";>
+    <script src="https://kit.fontawesome.com/a3865e2cde.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="../javascript/main.js" defer></script>
+  </head>
+  <body>
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-xl sticky-top" role="navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <img src="../assets/images/Embark1(2).png" alt="Embark Performance Training Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggle-icon"><i class="bi bi-list"></i></span>
+                </button>
+                <div class="container d-flex text-center">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav nav ms-auto">
+                            <div class="row d-flex align-items-center navbar-column">
+                                <div class="col">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                    </li>
+                                </div>
+                                <div class="col">
+                                    <li class="nav-item dropdown">
+                                        <a class="dropdown-toggle nav-link" href="./about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">About<i class="bi bi-chevron-down ps-1"></i></a>
+                                        <ul class="dropdown-menu dropdown-menu-dark text-center text-uppercase">
+                                            <li><a class="dropdown-item" href="./about.html#mission">Mission</a></li>
+                                            <li><a class="dropdown-item" href="./about.html#about-coach">Coach Barker</a></li>
+                                            <li><a class="dropdown-item" href="./about.html#gym">The Gym</a></li>                              <li><a class="dropdown-item" href="./about.html#testimonials">Testimonials</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="col">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./programs.html">Programs</a>
+                                    </li>
+                                </div>
+                                <div class="col">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="./social.html">Social Feeds</a>
+                                    </li>
+                                </div>
+                                <div class="col">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="./form.html">Inquiry Form</a>
+                                    </li>
+                                </div>
+                                <div class="col">
+                                    <a href="./contact.html" class="btn btn-brand">Contact</a>
+                                </div>
+                           </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Divider-->
+        <div class="container-fluid">
+            <div class="row divider background-noise">
+            </div>
+        </div>
+
+        <!--FORM-->
+        <div class="container">
+            <form action="https://formspree.io/f/mblzqreg" method="POST">
+                <h1 class="text-center mt-3">Training Inquiry Form</h1>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-8 mt-2 mb-4 pb-0">
+                        <h6 class="text-center text-muted lead">Disclaimer: Thank you for your interest in being a client of Embark Performance Training. Information collected about new clients is confidential and will be treated accordingly.</h6>
+                    </div>
+                </div>
+                <!--CLIENT INFORMATION-->
+                <div class="row d-flex justify-content-center pb-0">
+                    <div class="col-12 pb-0 px-0">
+                        <h4 class="text-uppercase text-center form-section-title">Client Information</h4>
+                    </div>
+                </div>
+                    <div class="row d-flex flex-wrap">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label for="name" class="fw-bold">Full Name</label>
+                            <input type="text" name="name" id="name" class="form-control" required>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-4 pb-0" aria-required="true">
+                            <label for="gender" class="fw-bold mb-2">Gender</label>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" id="male" value="male" class="form-check-input">
+                                <label for="male" class=" form-check-label">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" id="female" value="female" class="form-check-input">
+                                <label for="female" class="form-check-label">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" id="other" value="other" class="form-check-input">
+                                <label for="other" class="form-check-label">Other</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label for="address" class="fw-bold">Street Address</label>
+                            <input type="text" name="address" id="address" class="form-control" required>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label for="city" class="fw-bold">City</label>
+                            <input type="text" name="city" id="city" class="form-control" required>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label for="state" class="fw-bold">State</label>
+                            <input type="text" name="state" id="state" class="form-control" required>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label for="zip-code" class="fw-bold">Zip Code</label>
+                            <input type="text" name="zip-code" id="zip-code" class="form-control" required>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label for="email" class="fw-bold">E-Mail</label>
+                            <input type="text" name="email" id="email" class="form-control" required>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label for="phone" class="fw-bold">Phone</label>
+                            <input type="text" name="phone" id="phone" class="form-control" required>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label for="acquisition" class="fw-bold">How did you hear about us?</label>
+                            <select name="acquisition" id="acquisition" class="form-select" required>
+                                <option></option>
+                                <option value="referral">Word of Mouth</option>
+                                <option value="google">Google</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="twitch">Twitch</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+<!--
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label for="emergency-contact" class="fw-semibold">Emergency Contact:</label>
+                            <input type="text" name="emergency-contact" id="emergency-contact">
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-6">
+                            <label for="emergency-phone" class="fw-semibold">Emergency Contact Phone:</label>
+                            <input type="text" name="emergency-phone" id="emergency-phone">
+                        </div>
+
+                    </div>
+
+                </div>
+                <br>
+                    HEALTH / PARQ FORM
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-8">
+                        <h5 class="text-uppercase text-center form-section-title">Health / Par-Q Form</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="heart-condition">Has your doctor ever said that you have a heart condition and should only do physical activity recommended by a doctor?</label>
+                    
+                        <input type="radio" name="heart-condition" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" name="heart-condition" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="chest-pain">Do you feel pain in your chest when you do physical activity?</label>
+
+                        <input type="radio" name="chest-pain" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" name="chest-pain" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="chest-pain-last-month">In the past month, have you had chest pain when you were not doing physical activity?</label>
+
+                        <input type="radio" name="chest-pain-last-month" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" name="chest-pain-last-month" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="dizziness">Do you lose balance because of dizziness or do you ever lose consciousness?</label>
+
+                        <input type="radio" name="dizziness" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" name="dizziness" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="bone-joint-health">Do you have a bone, joint, or other health problem that causes you pain or limitations in movement?</label>
+
+                        <input type="radio" name="bone-joint-health" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" name="bone-joint-health" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="pregnancy">Are you pregnant now or have you given birth within the last six months?</label>
+
+                        <input type="radio" name="pregnancy" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" name="pregnancy" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="medications">Do you take any medications on a regular basis?</label>
+
+                        <input type="radio" name="medications" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" name="medications" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="medications-list">If so, what are the medications?</label>
+                        <input type="text" name="medications-list" id="medications-list">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="reason-no-activity">Do you know of any other reason why you should not do physical activity?</label>
+
+                        <input type="radio" name="reason-no-activity" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="radio" name="reason-no-activity" id="no" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="yes-explanation">If you marked "Yes" to any of the above, please explain in detail below:</label>
+                        <br>
+                        <textarea name="yes-explanation" id="yes-explanation" rows="5" cols="100"></textarea>
+                    </div>
+                </div>-->
+
+                <!--MEMBERSHIP-->
+                <div class="row d-flex justify-content-center pb-0">
+                    <div class="col-12 pb-0 px-0">
+                        <h4 class="text-uppercase text-center form-section-title">Membership</h4>
+                    </div>
+                </div>
+                <div class="row d-flex flex-wrap">
+                    <div class="col-12" aria-required="true">
+                        <label for="membership-type" class="fw-bold mb-3">Please indicate the type of membership you are interested in:</label>
+                        <br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="membership-type" id="1-on-1" value="1-on-1" class="form-check-input">
+                            <label for="1-on-1" class="me-1 form-check-label">1-on-1 ($60/session)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="membership-type" id="duo" value="duo" class="form-check-input">
+                            <label for="duo" class="me-1 form-check-label">Duo ($75/session)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="membership-type" id="group" value="group" class="form-check-input">
+                            <label for="group" class="me-1 form-check-label">Group ($100/session)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="membership-type" id="written-program" value="written-program" class="form-check-input">
+                            <label for="written-program" class="form-check-label">Individualized Training Program ($60/4-week Program)</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="training-availability" class="fw-bold">If you are interested in in-person training, what days & times would you be available to train?</label>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <label for="sunday" class="fw-semibold">Sunday:</label>
+                        <br>
+                        <input type="checkbox" name="sunday" id="sunday-morning" value="sunday-morning">
+                        <label for="sunday-morning">Morning</label>
+                        <br>
+                        <input type="checkbox" name="sunday" id="sunday-afternoon" value="sunday-afternoon">
+                        <label for="sunday-afternoon">Afternoon</label>
+                        <br>
+                        <input type="checkbox" name="sunday" id="sunday-evening" value="sunday-evening">
+                        <label for="sunday-evening">Evening</label>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <label for="monday" class="fw-semibold">Monday:</label>
+                        <br>
+                        <input type="checkbox" name="monday" id="monday-morning" value="monday-morning">
+                        <label for="monday-morning">Morning</label>
+                        <br>
+                        <input type="checkbox" name="monday" id="monday-afternoon" value="monday-afternoon">
+                        <label for="monday-afternoon">Afternoon</label>
+                        <br>
+                        <input type="checkbox" name="sunday" id="monday-evening" value="monday-evening">
+                        <label for="monday-evening">Evening</label>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <label for="tuesday" class="fw-semibold">Tuesday:</label>
+                        <br>
+                        <input type="checkbox" name="tuesday" id="tuesday-morning" value="tuesday-morning">
+                        <label for="tuesday-morning">Morning</label>
+                        <br>
+                        <input type="checkbox" name="tuesday" id="tuesday-afternoon" value="tuesday-afternoon">
+                        <label for="tuesday-afternoon">Afternoon</label>
+                        <br>
+                        <input type="checkbox" name="tuesday" id="tuesday-evening" value="tuesday-evening">
+                        <label for="tuesday-evening">Evening</label>
+                    </div>
+                     <div class="col-6 col-md-3">
+                        <label for="wednesday" class="fw-semibold">Wednesday:</label>
+                        <br>
+                        <input type="checkbox" name="wednesday" id="wednesday-morning" value="wednesday-morning">
+                        <label for="wednesday-morning">Morning</label>
+                        <br>
+                        <input type="checkbox" name="wednesday" id="wednesday-afternoon" value="wednesday-afternoon">
+                        <label for="wednesday-afternoon">Afternoon</label>
+                        <br>
+                        <input type="checkbox" name="tuesday" id="wednesday-evening" value="wednesday-evening">
+                        <label for="wednesday-evening">Evening</label>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <label for="thursday" class="fw-semibold">Thursday:</label>
+                        <br>
+                        <input type="checkbox" name="thursday" id="thursday-morning" value="thursday-morning">
+                        <label for="thursday-morning">Morning</label>
+                        <br>
+                        <input type="checkbox" name="thursday" id="thursday-afternoon" value="thursday-afternoon">
+                        <label for="thursday-afternoon">Afternoon</label>
+                        <br>
+                        <input type="checkbox" name="thursday" id="thursday-evening" value="thursday-evening">
+                        <label for="thursday-evening">Evening</label>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <label for="friday" class="fw-semibold">Friday:</label>
+                        <br>
+                        <input type="checkbox" name="friday" id="friday-morning" value="friday-morning">
+                        <label for="friday-morning">Morning</label>
+                        <br>
+                        <input type="checkbox" name="friday" id="friday-afternoon" value="friday-afternoon">
+                        <label for="friday-afternoon">Afternoon</label>
+                        <br>
+                        <input type="checkbox" name="friday" id="friday-evening" value="friday-evening">
+                        <label for="friday-evening">Evening</label>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <label for="saturday" class="fw-semibold">Saturday:</label>
+                        <br>
+                        <input type="checkbox" name="saturday" id="saturday-morning" value="saturday-morning">
+                        <label for="saturday-morning">Morning</label>
+                        <br>
+                        <input type="checkbox" name="saturday" id="saturday-afternoon" value="saturday-afternoon">
+                        <label for="saturday-afternoon">Afternoon</label>
+                        <br>
+                        <input type="checkbox" name="saturday" id="saturday-evening" value="saturday-evening">
+                        <label for="saturday-evening">Evening</label>
+                    </div>
+               
+                    <div class="col-12 mt-4">
+                        <label for="availability-details" class="fw-bold mb-2">Is there anything you'd like to note about your availability?</label>
+                        <br>
+                        <textarea type="text" name="availability-details" id="availability-details" rows="2" cols="100" class="form-control"></textarea>
+                    </div>
+                </div>
+
+                <!--CLIENT SIGNATURE / SUBMIT-->
+                <div class="row d-flex justify-content-center pb-0">
+                    <div class="col-12 pb-0 px-0">
+                        <h4 class="text-uppercase text-center form-section-title">Client Signature</h4>
+                    </div>
+                </div>
+                <div class="row d-flex flex-wrap">
+                    <div class="col-6 col-md-4">
+                        <label for="signature" class="fw-bold">Signature</label>
+                        <input type="text" name="signature" id="signature" class="form-control" required>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <label for="printed-name" class="fw-bold">Printed Name</label>
+                        <input type="text" name="printed-name" id="printed-name" class="form-control" required>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <label for="date" class="fw-bold">Date</label>
+                        <input type="date" name="date" id="date" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row d-flex flex-wrap text-center pb-0">
+                    <div class="col-12 pb-0">
+                        <button class="btn btn-brand" type="submit">Submit form</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!--Divider-->
+        <div class="container-fluid" style="border-top: 2px solid black;">
+            <div class="row divider background-noise">
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="border-top">
+                <div class="container">
+                    <section>
+                        <ul class="nav list-unstyled justify-content-center py-2">
+                            <!--Instagram-->
+                            <li class="icon">
+                                <a href="https://www.instagram.com/embark_performance/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <!--Twitch-->
+                            <li class="ms-5 icon">
+                                <a href="https://www.twitch.tv/coachembark" target="_blank"><i class="me-3 bi bi-twitch"></i></a>
+                            </li>
+                            <!--Email-->
+                            <li class="ms-4 icon">
+                                <a href=""><i class="bi bi-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="text-center text-dark p-3 copyright" style="font-size: 0.9rem;opacity: 0.4;">© 2025 Embark Performance Training, LLC<br>Website by Whitney Greta</div>
+        </footer>
+  </body>
+</html>

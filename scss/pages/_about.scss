@@ -1,0 +1,129 @@
+@use '../base/reset';
+
+#mission {
+    background-image: url(../assets/images/Podium2use.JPG); 
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding: 125px 0;
+    border-bottom: reset.$section-border;
+}
+
+.mission-container {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 75px 50px;
+}
+
+.mission {
+    border-left: 4px solid reset.$color-brand;
+    border-right: 4px solid reset.$color-brand;
+}
+
+#about-coach {
+    background-color: reset.$bg-light;
+    border-bottom: reset.$section-border;
+}
+
+.about-title {
+    border-left: 10px solid reset.$color-brand-light;
+}
+
+.about-photo {
+    height: inherit;
+    background: {
+        image: url(../assets/images/BarkerLiftHeavy2.jpg);
+        size: cover;
+        repeat: no-repeat;
+    }
+    clip-path: url(#myPolygonClip);
+}
+
+.about-photo-mobile {
+    display: none;
+}
+
+#gym {
+    background-color: reset.$bg-brand;
+    border-bottom: reset.$section-border;
+}
+
+.gym-equipment-box {
+     background-color: rgba(255, 255, 255, 0.5); 
+     border: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.list-group {
+    border-radius: 0;
+    .list-group-item {
+        background-color: rgba(255, 255, 255, 0.3);
+        border: 0.5px solid rgba(255, 255, 255, 0.5);
+    }
+}
+
+#testimonials { 
+     background-color: reset.$bg-light;
+     border-bottom: reset.$section-border;
+}
+
+
+.testimonial {
+   min-height: 500px;
+    .athlete-img {
+        img {
+            border: 3px solid black;
+            height: 150px;
+            border-radius: 50%;
+        }
+    }
+    .testimonial-text {
+        background-color: rgb(255, 255, 255, 0.9);
+        border: 2px solid black;
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .about-photo {
+        display: none;
+        clip-path: none;
+    }
+    .about-photo-mobile {
+        display: block;
+        height: 400px;
+        background: {
+            image: url(../assets/images/BarkerLiftHeavy22.jpg);
+            size: cover;
+            repeat: no-repeat;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+   .mission-container {
+        padding: 75px 35px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        .athlete-img {
+            width: inherit;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 380px) {
+    .about-title {
+        padding-left: 15px !important;
+        h1 {
+            font-size: 1.9rem;
+        }
+        p {
+            font-size: 1.2rem !important;
+        }
+    }
+}
