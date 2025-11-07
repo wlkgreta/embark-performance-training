@@ -12532,7 +12532,7 @@ ul {
 }
 .appear-on-scroll {
   opacity: 0;
-  transition: opacity 1s linear;
+  transition: opacity 1s ease-in-out;
 }
 
 .appear-on-scroll-two {

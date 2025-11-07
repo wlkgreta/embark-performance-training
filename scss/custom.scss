@@ -153,24 +153,27 @@ ul {
 
 .appear-on-scroll-two {
   opacity: 0;
-  transition: opacity 1.3s ease-in-out;
+  transition: opacity 1.1s ease-in-out;
 }
 
 .appear-on-scroll-three {
   opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.2s ease-in-out;
 }
 
 .appear-on-scroll.visible {
   animation: appearOnScroll 1s ease-in-out forwards;
+  -webkit-animation: appearOnScroll 1s ease-in-out forwards;
 }
 
 .appear-on-scroll-two.visible {
   animation: appearOnScroll 1.2s ease-in-out forwards;
+  -webkit-animation: appearOnScroll 1.2s ease-in-out forwards;
 }
 
 .appear-on-scroll-three.visible {
   animation: appearOnScroll 1.4s ease-in-out forwards;
+  -webkit-animation: appearOnScroll 1.4s ease-in-out forwards;
 }
 
 .slide-in-left {
@@ -180,4 +183,5 @@ ul {
 
 .slide-in-left.visible {
   animation: slideInLeft 1s ease-in-out forwards;
+  -webkit-animation: slideInLeft 1s ease-in-out forwards;
 }
