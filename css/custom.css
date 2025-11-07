@@ -11903,8 +11903,8 @@ footer .icon .bi {
 }
 
 #hero {
-  height: 125vh;
-  margin-top: -150px;
+  height: 100vh;
+  margin-top: -75px;
   background-image: url(../assets/images/GymHero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -11995,6 +11995,15 @@ nav {
   font-size: 14px;
 }
 
+.about-toggle {
+  visibility: visible;
+}
+
+.about-toggle-mobile {
+  visibility: hidden;
+  display: none;
+}
+
 .dropdown-menu {
   border: 1px solid;
   border-radius: 0;
@@ -12028,6 +12037,14 @@ nav {
   }
   .navbar-column .nav-item {
     padding: 6px;
+  }
+  .about-toggle {
+    visibility: hidden;
+    display: none;
+  }
+  .about-toggle-mobile {
+    visibility: visible;
+    display: block;
   }
 }
 /*$bg-brand: rgb(107, 20, 161);*/
