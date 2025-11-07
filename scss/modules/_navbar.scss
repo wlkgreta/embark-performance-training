@@ -67,6 +67,14 @@ nav {
         font-size: 14px;
     }
 }
+.about-toggle {
+    visibility: visible;
+}
+
+.about-toggle-mobile {
+    visibility: hidden;
+    display: none;
+}
 
 .dropdown-menu {
     border: 1px solid;
@@ -102,6 +110,14 @@ nav {
         .nav-item {
             padding: 6px;
         }
+    }
+    .about-toggle {
+        visibility: hidden;
+        display: none;
+    }
+    .about-toggle-mobile {
+        visibility: visible;
+        display: block;
     }
 }
 
