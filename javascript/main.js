@@ -36,8 +36,30 @@ accordionHeader.forEach(accordion => {
 })
 
 // Clear Form After Submission
-    window.onbeforeunload = () => {
-        for(const form of document.getElementsByTagName('form')) {
-            form.reset();
-        }
-    }
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+  }
+}
+
+// Add NavBar background color on scroll
+const navBar = document.querySelector('.navbar-home');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    navBar.classList.add('scrolled');
+  } else if (window.scrollY <=50) {
+    navBar.classList.remove('scrolled');
+  }
+});
+
+// If NavBar background is transparent and user clicks on toggle button, make background black
+
+const screenWidth = screen.width;
+const toggle = document.querySelector('.toggle-icon');
+
+toggle.addEventListener('click', () => {
+  if (window.scrollY <= 50 && screenWidth <= 1200) {
+    navBar.classList.add('scrolled');
+  }
+}); 
