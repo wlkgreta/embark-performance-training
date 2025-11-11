@@ -18,7 +18,7 @@
   </head>
   <body>
         <!--NavBar-->
-        <nav class="navbar navbar-expand-xl sticky-top" role="navigation">
+        <nav class="navbar navbar-expand-xl fixed-top" role="navigation">
             <div class="container">
                 <a class="navbar-brand" href="#home">
                     <img src="../assets/images/Embark1(2).png" alt="Embark Performance Training Logo">
@@ -32,18 +32,31 @@
                             <div class="row d-flex align-items-center navbar-column">
                                 <div class="col">
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                        <a class="nav-link" href="../index.html">Home</a>
                                     </li>
                                 </div>
                                 <div class="col">
-                                    <li class="nav-item dropdown">
+                                    <!--Desktop About Dropdown-->
+                                    <li class="nav-item dropdown about-toggle">
                                         <a class="dropdown-toggle nav-link ps-3 about-toggle" href="./about.html" role="button" aria-expanded="false">About<i class="bi bi-chevron-down ps-1"></i></a>
-                                        <a class="dropdown-toggle nav-link ps-3 about-toggle-mobile" role="button" aria-expanded="false">About<i class="bi bi-chevron-down ps-1"></i></a>
                                         <ul class="dropdown-menu dropdown-menu-dark text-center text-uppercase">
                                             <li><a class="dropdown-item" href="./about.html#mission">Mission</a></li>
                                             <li><a class="dropdown-item" href="./about.html#about-coach">Coach Barker</a></li>
-                                            <li><a class="dropdown-item" href="./about.html#gym">The Gym</a></li>                              <li><a class="dropdown-item" href="./about.html#testimonials">Testimonials</a></li>
+                                            <li><a class="dropdown-item" href="./about.html#gym">The Gym</a></li>                          
+                                            <li><a class="dropdown-item" href="./about.html#testimonials">Testimonials</a></li>
                                         </ul>
+                                    </li>
+                                    <!--Mobile About Dropdown-->
+                                    <li class="nav-item dropdown about-toggle-mobile">
+                                        <a class="dropdown-toggle nav-link ps-3 collapsed" role="button" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#aboutDropdown" aria-controls="aboutDropdown" aria-label="Toggle About Page Options">About<i class="bi bi-chevron-down ps-1"></i></a>
+                                        <div class="collapse" id="aboutDropdown">
+                                            <ul class="dropdown-menu dropdown-menu-dark text-center text-uppercase">
+                                                <li><a class="dropdown-item" href="./about.html#mission">Mission</a></li>
+                                                <li><a class="dropdown-item" href="./about.html#about-coach">Coach Barker</a></li>
+                                                <li><a class="dropdown-item" href="./about.html#gym">The Gym</a></li>                     
+                                                <li><a class="dropdown-item" href="./about.html#testimonials">Testimonials</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                 </div>
                                 <div class="col">
@@ -58,7 +71,7 @@
                                 </div>
                                 <div class="col">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="./form.html">Inquiry Form</a>
+                                        <a class="nav-link active" href="./form.html" aria-current="page">Inquiry Form</a>
                                     </li>
                                 </div>
                                 <div class="col">
@@ -73,7 +86,7 @@
 
         <!--Divider-->
         <div class="container-fluid">
-            <div class="row divider background-noise">
+            <div class="row divider background-noise" style="margin-top: 125px;">
             </div>
         </div>
 
@@ -83,22 +96,22 @@
                 <h1 class="text-center mt-3">Training Inquiry Form</h1>
                 <div class="row d-flex justify-content-center">
                     <div class="col-xl-8 mt-2 mb-4 pb-0">
-                        <h6 class="text-center text-muted lead">Disclaimer: Thank you for your interest in being a client of Embark Performance Training. Information collected about new clients is confidential and will be treated accordingly.</h6>
+                        <h2 class="fs-5 text-center text-muted lead">Disclaimer: Thank you for your interest in being a client of Embark Performance Training. Information collected about new clients is confidential and will be treated accordingly.</h2>
                     </div>
                 </div>
                 <!--CLIENT INFORMATION-->
                 <div class="row d-flex justify-content-center pb-0">
                     <div class="col-12 pb-0 px-0">
-                        <h4 class="text-uppercase text-center form-section-title">Client Information</h4>
+                        <h3 class="fs-4 text-uppercase text-center form-section-title">Client Information</h3>
                     </div>
                 </div>
                     <div class="row d-flex flex-wrap">
                         <div class="col-12 col-lg-6 col-xl-4">
                             <label for="name" class="fw-bold">Full Name</label>
-                            <input type="text" name="name" id="name" class="form-control" required>
+                            <input type="text" name="name" id="name" class="form-control" aria-required="true"required>
                         </div>
 
-                        <div class="col-12 col-lg-6 col-xl-4 pb-0" aria-required="true">
+                        <div class="col-12 col-lg-6 col-xl-4 pb-0" aria-required="true" required>
                             <label for="gender" class="fw-bold mb-2">Gender</label>
                             <br>
                             <div class="form-check form-check-inline">
@@ -117,37 +130,37 @@
 
                         <div class="col-12 col-lg-6 col-xl-4">
                             <label for="address" class="fw-bold">Street Address</label>
-                            <input type="text" name="address" id="address" class="form-control" required>
+                            <input type="text" name="address" id="address" class="form-control" aria-required="true" required>
                         </div>
 
                         <div class="col-12 col-lg-6 col-xl-4">
                             <label for="city" class="fw-bold">City</label>
-                            <input type="text" name="city" id="city" class="form-control" required>
+                            <input type="text" name="city" id="city" class="form-control" aria-required="true" required>
                         </div>
 
                         <div class="col-12 col-lg-6 col-xl-4">
                             <label for="state" class="fw-bold">State</label>
-                            <input type="text" name="state" id="state" class="form-control" required>
+                            <input type="text" name="state" id="state" class="form-control" aria-required="true" required>
                         </div>
 
                         <div class="col-12 col-lg-6 col-xl-4">
                             <label for="zip-code" class="fw-bold">Zip Code</label>
-                            <input type="text" name="zip-code" id="zip-code" class="form-control" required>
+                            <input type="text" name="zip-code" id="zip-code" class="form-control" aria-required="true" required>
                         </div>
 
                         <div class="col-12 col-lg-6 col-xl-4">
                             <label for="email" class="fw-bold">E-Mail</label>
-                            <input type="text" name="email" id="email" class="form-control" required>
+                            <input type="text" name="email" id="email" class="form-control" aria-required="true" required>
                         </div>
 
                         <div class="col-12 col-lg-6 col-xl-4">
                             <label for="phone" class="fw-bold">Phone</label>
-                            <input type="text" name="phone" id="phone" class="form-control" required>
+                            <input type="text" name="phone" id="phone" class="form-control" aria-required="true" required>
                         </div>
 
                         <div class="col-12 col-lg-6 col-xl-4">
                             <label for="acquisition" class="fw-bold">How did you hear about us?</label>
-                            <select name="acquisition" id="acquisition" class="form-select" required>
+                            <select name="acquisition" id="acquisition" class="form-select" aria-required="true" required>
                                 <option></option>
                                 <option value="referral">Word of Mouth</option>
                                 <option value="google">Google</option>
@@ -283,11 +296,11 @@
                 <!--MEMBERSHIP-->
                 <div class="row d-flex justify-content-center pb-0">
                     <div class="col-12 pb-0 px-0">
-                        <h4 class="text-uppercase text-center form-section-title">Membership / Availability</h4>
+                        <h3 class="fs-4 text-uppercase text-center form-section-title">Membership / Availability</h3>
                     </div>
                 </div>
                 <div class="row d-flex flex-wrap">
-                    <div class="col-12" aria-required="true">
+                    <div class="col-12" aria-required="true" required>
                         <label for="membership-type" class="fw-bold mb-3">Please indicate the type of membership you are interested in:</label>
                         <br>
                         <div class="form-check form-check-inline">
@@ -415,7 +428,7 @@
                     </div> -->
                     <div class="col-8 col-md-4 pb-0">
                         <label for="date" class="fw-bold">Date</label>
-                        <input type="date" name="date" id="date" class="form-control" required>
+                        <input type="date" name="date" id="date" class="form-control" aria-required="true" required>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-start pb-0">
@@ -447,7 +460,7 @@
                             </li>
                             <!--Email-->
                             <li class="ms-4 icon">
-                                <a href=""><i class="bi bi-envelope"></i></a>
+                                <a href="./contact.html"><i class="bi bi-envelope"></i></a>
                             </li>
                         </ul>
                     </section>

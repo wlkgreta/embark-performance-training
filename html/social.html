@@ -18,7 +18,7 @@
   </head>
   <body>
         <!--NavBar-->
-        <nav class="navbar navbar-expand-xl sticky-top" role="navigation">
+        <nav class="navbar navbar-expand-xl fixed-top" role="navigation">
             <div class="container">
                 <a class="navbar-brand" href="#home">
                     <img src="../assets/images/Embark1(2).png" alt="Embark Performance Training Logo">
@@ -32,18 +32,31 @@
                             <div class="row d-flex align-items-center navbar-column">
                                 <div class="col">
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                                        <a class="nav-link" href="../index.html">Home</a>
                                     </li>
                                 </div>
                                 <div class="col">
-                                    <li class="nav-item dropdown">
+                                    <!--Desktop About Dropdown-->
+                                    <li class="nav-item dropdown about-toggle">
                                         <a class="dropdown-toggle nav-link ps-3 about-toggle" href="./about.html" role="button" aria-expanded="false">About<i class="bi bi-chevron-down ps-1"></i></a>
-                                        <a class="dropdown-toggle nav-link ps-3 about-toggle-mobile" role="button" aria-expanded="false">About<i class="bi bi-chevron-down ps-1"></i></a>
                                         <ul class="dropdown-menu dropdown-menu-dark text-center text-uppercase">
                                             <li><a class="dropdown-item" href="./about.html#mission">Mission</a></li>
                                             <li><a class="dropdown-item" href="./about.html#about-coach">Coach Barker</a></li>
-                                            <li><a class="dropdown-item" href="./about.html#gym">The Gym</a></li>                              <li><a class="dropdown-item" href="./about.html#testimonials">Testimonials</a></li>
+                                            <li><a class="dropdown-item" href="./about.html#gym">The Gym</a></li>                          
+                                            <li><a class="dropdown-item" href="./about.html#testimonials">Testimonials</a></li>
                                         </ul>
+                                    </li>
+                                    <!--Mobile About Dropdown-->
+                                    <li class="nav-item dropdown about-toggle-mobile">
+                                        <a class="dropdown-toggle nav-link ps-3 collapsed" role="button" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#aboutDropdown" aria-controls="aboutDropdown" aria-label="Toggle About Page Options">About<i class="bi bi-chevron-down ps-1"></i></a>
+                                        <div class="collapse" id="aboutDropdown">
+                                            <ul class="dropdown-menu dropdown-menu-dark text-center text-uppercase">
+                                                <li><a class="dropdown-item" href="./about.html#mission">Mission</a></li>
+                                                <li><a class="dropdown-item" href="./about.html#about-coach">Coach Barker</a></li>
+                                                <li><a class="dropdown-item" href="./about.html#gym">The Gym</a></li>                     
+                                                <li><a class="dropdown-item" href="./about.html#testimonials">Testimonials</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                 </div>
                                 <div class="col">
@@ -53,7 +66,7 @@
                                 </div>
                                 <div class="col">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="./social.html">Social</a>
+                                        <a class="nav-link active" href="./social.html" aria-current="page">Social</a>
                                     </li>
                                 </div>
                                 <div class="col">
@@ -72,7 +85,7 @@
         </nav>
         <!--Divider-->
         <div class="container-fluid">
-            <div class="row divider background-noise">
+            <div class="row divider background-noise" style="margin-top: 125px;">
             </div>
         </div>
 
@@ -88,7 +101,7 @@
                             <div class="title-line-long"></div>
                             <div class="title-line-long"></div>
                             <div class="title-line-long"></div>
-                            <h2 class="display-4 title mx-4 pt-1">Join Our Online Community</h2>
+                            <h1 class="display-4 title mx-4 pt-1">Join Our Online Community</h1>
                             </div>
                         </div>
                     </div>
@@ -136,7 +149,7 @@
                         </li>
                         <!--Email-->
                         <li class="ms-4 icon">
-                            <a href=""><i class="bi bi-envelope"></i></a>
+                            <a href="./contact.html"><i class="bi bi-envelope"></i></a>
                         </li>
                     </ul>
                 </section>
