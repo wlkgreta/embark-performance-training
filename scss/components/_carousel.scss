@@ -9,9 +9,13 @@
 .carousel-item {
     color: white;
     text-align: center;
-    padding: 40px 50px;
+    padding: 10px 50px;
     h4 {
         max-width: 1000px;
         justify-self: center;
     }
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 20%;
 }
