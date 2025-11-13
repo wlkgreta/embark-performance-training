@@ -12424,6 +12424,19 @@ form .form-check-input {
   border-bottom: 2px solid black;
 }
 
+body .display-default {
+  text-wrap: auto;
+}
+
+.sk-twitch-channel-videos-counts-container {
+  padding-left: 1.5rem;
+}
+
+.sk_twitch_channel_white_pop_up {
+  margin: 10% 0 !important;
+  padding: 25px 0 !important;
+}
+
 /*$bg-brand: rgb(107, 20, 161);*/
 /* $bg-brand: rgb(136, 78, 170); */
 /*$bg-brand:rgba(107, 20, 161, 0.65);*/
