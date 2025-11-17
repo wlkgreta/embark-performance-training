@@ -11907,11 +11907,17 @@ footer .icon .bi {
 }
 
 #hero {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../assets/images/GymHero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: auto;
+}
+
+.hero-text {
+  max-height: 50vh;
+  width: auto;
 }
 
 .hero-logo {
@@ -11930,6 +11936,11 @@ footer .icon .bi {
   .hero-btn .btn {
     min-width: 90%;
     margin: 20px 10px;
+  }
+}
+@media only screen and (max-height: 825px) {
+  #hero {
+    height: 115vh;
   }
 }
 /*$bg-brand: rgb(107, 20, 161);*/
