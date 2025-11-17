@@ -1,11 +1,17 @@
 #hero {
-    height: 100vh;
+    min-height: 100vh;
     background: {
         image: url(../assets/images/GymHero.jpg);
         position: center;
         repeat: no-repeat;
         size: cover;
     }
+    overflow: auto;
+}
+
+.hero-text {
+    max-height: 50vh;
+    width: auto;
 }
 
 .hero-logo {
@@ -28,4 +34,10 @@
             margin: 20px 10px;
         }
     }  
+}
+
+@media only screen and (max-height: 825px) {
+    #hero {
+        height: 115vh;
+    }
 }
