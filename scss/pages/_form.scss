@@ -1,5 +1,19 @@
 @use '../base/reset';
 
+#body-form {
+    background: {
+        image: url(../assets/images/GymHero.jpg);
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
+    }
+}
+
+.form-bg {
+    background-color: reset.$bg-light;
+}
+
 .form-section-title {
     margin-bottom: 40px;
     background-color: reset.$color-brand-secondary;

@@ -82,36 +82,35 @@ ul {
   align-items: center;
   .title {
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 1);
     line-height: 150%;
   }
   .title-line-horizontal {
     height: 8px;
     width: 25px;
-    background-color: rgba(243, 174, 0, 0.75);
+    background-color: rgba(243, 174, 0, 1);
   }
   .title-line-thin {
     height: 24px;
     width: 3px;
-    background-color: rgba(243, 174, 0, 0.75);
+    background-color: rgba(243, 174, 0, 1);
   }
   .title-line-short {
     height: 20px;
     width: 15px;
-    background-color: rgba(243, 174, 0, 0.75);
+    background-color: rgba(243, 174, 0, 1);
   }
   .title-line-long {
     height: 100px;
     width: 10px;
-    background-color: rgba(243, 174, 0, 0.75);
+    background-color: rgba(243, 174, 0, 1);
     margin: 0 2px;
   }
 }
 
 .divider {
-    height: 50px;
-    background-color: $bg-brand;
-    border-bottom: $section-border;
+    height: 75px;
+    background-color: rgb(191, 122, 240, 0.3);
 }
 
 // LINES 

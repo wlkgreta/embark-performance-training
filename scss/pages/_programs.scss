@@ -1,8 +1,17 @@
 @use '../base/reset';
 
+#body-programs {
+    background: {
+        image: url(../assets/images/GymHero.jpg);
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
+    }
+}
+
 #programs-section {
     background-color: reset.$bg-light;
-    border-bottom: reset.$section-border;
 }
 
 .program-header {
@@ -14,11 +23,11 @@
 }
 
 .accordion-item {
-    border-top: 4px solid reset.$bg-brand;
+    border-top: 4px solid reset.$color-brand-light;
 }
 
 .individualized {
-    border-bottom: 4px solid reset.$bg-brand;
+    border-bottom: 4px solid reset.$color-brand-light;
 }
 
 .programs-image {

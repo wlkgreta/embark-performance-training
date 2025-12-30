@@ -1,17 +1,21 @@
 @use '../base/reset';
 
+#body-homepage {
+    background: {
+        image: url(../assets/images/GymHero.jpg);
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
+    }
+}
 #about {
-    background-color: reset.$bg-light;
-    border-bottom: reset.$section-border;
+   background-color: reset.$bg-light;
 }
 
 .about-title-homepage {
-    border-left: 8px solid reset.$color-brand-light;
-    span {
-        color: reset.$color-brand;
-    }
+    border-left: 8px solid reset.$color-brand;
 }
-
 
 .about-photo-container {
     height: inherit;
@@ -25,13 +29,11 @@
 }
 
 #values-section {
-    background-color: reset.$bg-brand;
-    border-bottom: reset.$section-border;
+    background-color: reset.$bg-light;
 }
 
 #embark-section {
     background-color: reset.$bg-light;
-    border-bottom: reset.$section-border;
 }
 
 .values-container {
@@ -45,6 +47,9 @@
     padding: 50px 0;
     border-top: 4px solid reset.$color-brand;
     border-bottom: 4px solid reset.$color-brand;
+    p {
+        font-size: 1.1rem;
+    }
 }
 
 .value {
@@ -52,7 +57,7 @@
     min-height: 30rem;
     min-width: 24rem;
     max-width: 30rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
     padding: 3rem;
 }
 
@@ -93,12 +98,17 @@
 
 
 #carousel {
-    background-color: reset.$bg-brand; 
-    border-bottom: reset.$section-border;
+    background-color: reset.$bg-light; 
 }
 
 
 // MEDIA QUERIES
+
+@media only screen and (max-width: 1500px) {
+    .testimonial-attribute {
+        flex-direction: column;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
     .about-photo-container {
@@ -108,9 +118,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-    .testimonial-attribute {
-        flex-direction: column;
-    }
     .embark-steps {
         .vertical-line,
         .vr {

@@ -11879,7 +11879,7 @@ textarea.form-control-lg {
 /*$bg-brand:rgba(107, 20, 161, 0.65);*/
 .carousel-inner {
   border: 2px solid black;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(191, 122, 240, 0.2);
 }
 
 .carousel-item {
@@ -11908,10 +11908,6 @@ footer .icon .bi {
 
 #hero {
   height: 100vh;
-  background-image: url(../assets/images/GymHero.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   overflow: auto;
 }
 
@@ -12074,13 +12070,16 @@ nav {
 /*$bg-brand: rgb(107, 20, 161);*/
 /* $bg-brand: rgb(136, 78, 170); */
 /*$bg-brand:rgba(107, 20, 161, 0.65);*/
-#mission {
+#body-about-page {
   background-image: url(../assets/images/Podium2use.JPG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#mission {
   padding: 125px 0;
-  border-bottom: 2px solid black;
   margin-top: 100px;
 }
 
@@ -12096,11 +12095,10 @@ nav {
 
 #about-coach {
   background-color: #f1f1f1;
-  border-bottom: 2px solid black;
 }
 
 .about-title {
-  border-left: 8px solid rgb(191, 122, 240);
+  border-left: 8px solid #850FD1;
 }
 
 .about-photo {
@@ -12116,12 +12114,11 @@ nav {
 }
 
 #gym {
-  background-color: rgb(191, 122, 240);
-  border-bottom: 2px solid black;
+  background-color: #ffffff;
 }
 
 .gym-equipment-box {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(191, 122, 240, 0.2);
   border: 2px solid rgba(0, 0, 0, 0.7);
 }
 
@@ -12129,13 +12126,12 @@ nav {
   border-radius: 0;
 }
 .list-group .list-group-item {
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0.5px solid rgb(255, 255, 255);
 }
 
 #testimonials {
   background-color: #f1f1f1;
-  border-bottom: 2px solid black;
 }
 
 .testimonial {
@@ -12147,7 +12143,7 @@ nav {
   border-radius: 50%;
 }
 .testimonial .testimonial-text {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(191, 122, 240, 0.2);
   border: 2px solid black;
   padding: 40px;
 }
@@ -12193,6 +12189,33 @@ nav {
 /*$bg-brand: rgb(107, 20, 161);*/
 /* $bg-brand: rgb(136, 78, 170); */
 /*$bg-brand:rgba(107, 20, 161, 0.65);*/
+#body-contact {
+  background-image: url(../assets/images/GymHero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-bg {
+  background-color: #f1f1f1;
+}
+
+/*$bg-brand: rgb(107, 20, 161);*/
+/* $bg-brand: rgb(136, 78, 170); */
+/*$bg-brand:rgba(107, 20, 161, 0.65);*/
+#body-form {
+  background-image: url(../assets/images/GymHero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.form-bg {
+  background-color: #f1f1f1;
+}
+
 .form-section-title {
   margin-bottom: 40px;
   background-color: rgb(243, 174, 0);
@@ -12224,16 +12247,20 @@ form .form-check-input {
 /*$bg-brand: rgb(107, 20, 161);*/
 /* $bg-brand: rgb(136, 78, 170); */
 /*$bg-brand:rgba(107, 20, 161, 0.65);*/
+#body-homepage {
+  background-image: url(../assets/images/GymHero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #about {
   background-color: #f1f1f1;
-  border-bottom: 2px solid black;
 }
 
 .about-title-homepage {
-  border-left: 8px solid rgb(191, 122, 240);
-}
-.about-title-homepage span {
-  color: #850FD1;
+  border-left: 8px solid #850FD1;
 }
 
 .about-photo-container {
@@ -12246,13 +12273,11 @@ form .form-check-input {
 }
 
 #values-section {
-  background-color: rgb(191, 122, 240);
-  border-bottom: 2px solid black;
+  background-color: #f1f1f1;
 }
 
 #embark-section {
   background-color: #f1f1f1;
-  border-bottom: 2px solid black;
 }
 
 .values-container {
@@ -12267,13 +12292,18 @@ form .form-check-input {
   border-top: 4px solid #850FD1;
   border-bottom: 4px solid #850FD1;
 }
+.accessible p,
+.inclusive p,
+.purposeful p {
+  font-size: 1.1rem;
+}
 
 .value {
   text-align: center;
   min-height: 30rem;
   min-width: 24rem;
   max-width: 30rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   padding: 3rem;
 }
 
@@ -12307,10 +12337,14 @@ form .form-check-input {
 }
 
 #carousel {
-  background-color: rgb(191, 122, 240);
-  border-bottom: 2px solid black;
+  background-color: #f1f1f1;
 }
 
+@media only screen and (max-width: 1500px) {
+  .testimonial-attribute {
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .about-photo-container {
     height: 400px;
@@ -12318,9 +12352,6 @@ form .form-check-input {
   }
 }
 @media only screen and (max-width: 992px) {
-  .testimonial-attribute {
-    flex-direction: column;
-  }
   .embark-steps .vertical-line,
   .embark-steps .vr {
     display: none !important;
@@ -12360,9 +12391,16 @@ form .form-check-input {
 /*$bg-brand: rgb(107, 20, 161);*/
 /* $bg-brand: rgb(136, 78, 170); */
 /*$bg-brand:rgba(107, 20, 161, 0.65);*/
+#body-programs {
+  background-image: url(../assets/images/GymHero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #programs-section {
   background-color: #f1f1f1;
-  border-bottom: 2px solid black;
 }
 
 .program-header {
@@ -12430,9 +12468,16 @@ form .form-check-input {
 /*$bg-brand: rgb(107, 20, 161);*/
 /* $bg-brand: rgb(136, 78, 170); */
 /*$bg-brand:rgba(107, 20, 161, 0.65);*/
+#body-social {
+  background-image: url(../assets/images/GymHero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 #social-section {
   background-color: #f1f1f1;
-  border-bottom: 2px solid black;
 }
 
 body .display-default {
@@ -12545,35 +12590,34 @@ ul {
 }
 .title-box .title {
   font-weight: 900;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgb(0, 0, 0);
   line-height: 150%;
 }
 .title-box .title-line-horizontal {
   height: 8px;
   width: 25px;
-  background-color: rgba(243, 174, 0, 0.75);
+  background-color: rgb(243, 174, 0);
 }
 .title-box .title-line-thin {
   height: 24px;
   width: 3px;
-  background-color: rgba(243, 174, 0, 0.75);
+  background-color: rgb(243, 174, 0);
 }
 .title-box .title-line-short {
   height: 20px;
   width: 15px;
-  background-color: rgba(243, 174, 0, 0.75);
+  background-color: rgb(243, 174, 0);
 }
 .title-box .title-line-long {
   height: 100px;
   width: 10px;
-  background-color: rgba(243, 174, 0, 0.75);
+  background-color: rgb(243, 174, 0);
   margin: 0 2px;
 }
 
 .divider {
-  height: 50px;
-  background-color: rgb(191, 122, 240);
-  border-bottom: 2px solid black;
+  height: 75px;
+  background-color: rgba(191, 122, 240, 0.3);
 }
 
 .line {

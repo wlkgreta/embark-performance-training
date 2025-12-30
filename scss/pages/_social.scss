@@ -1,8 +1,17 @@
 @use '../base/reset';
 
+#body-social {
+    background: {
+        image: url(../assets/images/GymHero.jpg);
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
+    }
+}
+
 #social-section {
     background-color:  reset.$bg-light;
-    border-bottom: 2px solid black;
 }
 
 body .display-default {
