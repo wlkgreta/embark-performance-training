@@ -26,5 +26,5 @@ The goal of this project was to create increased visibility for Embark Performan
   
 ## Acknowledgements
 
-* [Formspree] (https://formspree.io/)
-* [SociableKIT] (https://www.sociablekit.com/widgets/)
+* [Formspree](https://formspree.io/)
+* [SociableKIT](https://www.sociablekit.com/widgets/)
