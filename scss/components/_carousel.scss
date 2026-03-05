@@ -2,20 +2,26 @@
 
 
 .carousel-inner {
-    border: 2px solid black; 
-    background-color: rgb(191, 122, 240, 0.2);
+    color:#850FD1;
 }
 
 .carousel-item {
     color: white;
     text-align: center;
     padding: 10px 50px;
+    font-size: 1.1rem;
     h4 {
         max-width: 1000px;
         justify-self: center;
     }
 }
 
+.bi-quote {
+    color: transparent; 
+    -webkit-text-stroke: 2px reset.$color-brand-light;
+}
+
 .carousel-control-prev, .carousel-control-next {
-    width: 20%;
+    width: 30%;
+    color: white;
 }

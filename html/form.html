@@ -48,7 +48,7 @@
                                     </li>
                                     <!--Mobile About Dropdown-->
                                     <li class="nav-item dropdown about-toggle-mobile">
-                                        <a class="dropdown-toggle nav-link ps-3 collapsed" role="button" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#aboutDropdown" aria-controls="aboutDropdown" aria-label="Toggle About Page Options">About<i class="bi bi-chevron-down ps-1"></i></a>
+                                        <a class="dropdown-toggle nav-link ps-3 collapsed" role="button" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#aboutDropdown" aria-controls="aboutDropdown" aria-label="Toggle About Page Options">About<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right ps-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg></a>
                                         <div class="collapse" id="aboutDropdown">
                                             <ul class="dropdown-menu dropdown-menu-dark text-center text-uppercase">
                                                 <li><a class="dropdown-item" href="./about.html#mission">Mission</a></li>
@@ -86,7 +86,7 @@
         <main role="main">
             <!--Divider-->
             <div class="container-fluid">
-                <div class="row divider" style="margin-top: 125px;">
+                <div class="row divider" style="margin-top: 125px; background-color: transparent; clip-path: none;">
                 </div>
             </div>
 
@@ -172,128 +172,6 @@
                                     </select>
                                 </div>
                             </div>
-        <!--
-                                <div class="col-12 col-lg-6 col-xl-4">
-                                    <label for="emergency-contact" class="fw-semibold">Emergency Contact:</label>
-                                    <input type="text" name="emergency-contact" id="emergency-contact">
-                                </div>
-
-                                <div class="col-12 col-lg-6 col-xl-6">
-                                    <label for="emergency-phone" class="fw-semibold">Emergency Contact Phone:</label>
-                                    <input type="text" name="emergency-phone" id="emergency-phone">
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <br>
-                            HEALTH / PARQ FORM
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-xl-8">
-                                <h5 class="text-uppercase text-center form-section-title">Health / Par-Q Form</h5>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="heart-condition">Has your doctor ever said that you have a heart condition and should only do physical activity recommended by a doctor?</label>
-                            
-                                <input type="radio" name="heart-condition" id="yes" value="yes">
-                                <label for="yes">Yes</label>
-
-                                <input type="radio" name="heart-condition" id="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="chest-pain">Do you feel pain in your chest when you do physical activity?</label>
-
-                                <input type="radio" name="chest-pain" id="yes" value="yes">
-                                <label for="yes">Yes</label>
-
-                                <input type="radio" name="chest-pain" id="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="chest-pain-last-month">In the past month, have you had chest pain when you were not doing physical activity?</label>
-
-                                <input type="radio" name="chest-pain-last-month" id="yes" value="yes">
-                                <label for="yes">Yes</label>
-
-                                <input type="radio" name="chest-pain-last-month" id="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="dizziness">Do you lose balance because of dizziness or do you ever lose consciousness?</label>
-
-                                <input type="radio" name="dizziness" id="yes" value="yes">
-                                <label for="yes">Yes</label>
-
-                                <input type="radio" name="dizziness" id="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="bone-joint-health">Do you have a bone, joint, or other health problem that causes you pain or limitations in movement?</label>
-
-                                <input type="radio" name="bone-joint-health" id="yes" value="yes">
-                                <label for="yes">Yes</label>
-
-                                <input type="radio" name="bone-joint-health" id="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="pregnancy">Are you pregnant now or have you given birth within the last six months?</label>
-
-                                <input type="radio" name="pregnancy" id="yes" value="yes">
-                                <label for="yes">Yes</label>
-
-                                <input type="radio" name="pregnancy" id="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="medications">Do you take any medications on a regular basis?</label>
-
-                                <input type="radio" name="medications" id="yes" value="yes">
-                                <label for="yes">Yes</label>
-
-                                <input type="radio" name="medications" id="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="medications-list">If so, what are the medications?</label>
-                                <input type="text" name="medications-list" id="medications-list">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="reason-no-activity">Do you know of any other reason why you should not do physical activity?</label>
-
-                                <input type="radio" name="reason-no-activity" id="yes" value="yes">
-                                <label for="yes">Yes</label>
-
-                                <input type="radio" name="reason-no-activity" id="no" value="no">
-                                <label for="no">No</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <label for="yes-explanation">If you marked "Yes" to any of the above, please explain in detail below:</label>
-                                <br>
-                                <textarea name="yes-explanation" id="yes-explanation" rows="5" cols="100"></textarea>
-                            </div>
-                        </div>-->
 
                         <!--MEMBERSHIP-->
                         <div class="row d-flex justify-content-center pb-0">
@@ -420,14 +298,6 @@
 
                         <!--SUBMIT-->
                         <div class="row d-flex flex-wrap justify-content-start">
-        <!--                    <div class="col-6 col-md-4">
-                                <label for="signature" class="fw-bold">Signature</label>
-                                <input type="text" name="signature" id="signature" class="form-control" required>
-                            </div>
-                            <div class="col-6 col-md-4">
-                                <label for="printed-name" class="fw-bold">Printed Name</label>
-                                <input type="text" name="printed-name" id="printed-name" class="form-control" required>
-                            </div> -->
                             <div class="col-8 col-md-4 pb-0">
                                 <label for="date" class="fw-bold">Date</label>
                                 <input type="date" name="date" id="date" class="form-control" aria-required="true" required>
@@ -444,7 +314,7 @@
             
             <!--Divider-->
             <div class="container-fluid">
-                <div class="row divider">
+                <div class="row divider" style="background-color: transparent; clip-path: none;">
                 </div>
             </div>
         </main>

@@ -53,6 +53,13 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// Add dark background overlay on scroll past hero
+window.addEventListener('scroll', () => {
+  const bgOverlay = document.querySelector('.overlay');
+  const newOpacity = Math.min(window.scrollY / 500, 0.75);
+  bgOverlay.style.opacity = newOpacity;  
+});
+
 // If NavBar background is transparent and user clicks on toggle button, make background black
 
 const screenWidth = screen.width;
@@ -63,3 +70,13 @@ toggle.addEventListener('click', () => {
     navBar.classList.add('scrolled');
   }
 }); 
+
+// On Click, rotate Chevron arrow (Navbar Gallery dropdown menu on mobile)
+document.addEventListener('DOMContentLoaded', () => {
+    const mobileDropdown = document.querySelector('.about-toggle-mobile');
+
+    mobileDropdown.addEventListener("click", () => {
+        const chevron = document.querySelector('.bi-chevron-right');
+        chevron.classList.toggle('chevron-rotate');
+    })
+})

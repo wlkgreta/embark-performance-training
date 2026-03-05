@@ -27,7 +27,7 @@
 }
 
 .icon {
-    color: $color-brand;
+    color: $color-brand-light;
     font-size: 50px;
     flex: none;
     .bi {
@@ -65,17 +65,13 @@ a {
 
 p {
     line-height: 30px;
+    font-size: 1.1rem;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
 }
-
-.background-noise {
-    background-image: url(../assets/images/noise.svg);
-}
-
 
 .title-box { 
   display: inline-flex;
@@ -109,8 +105,9 @@ ul {
 }
 
 .divider {
-    height: 75px;
-    background-color: rgb(191, 122, 240, 0.3);
+    height: 100px;
+    background-color: rgb(191, 122, 240, 0.7);
+    clip-path: polygon(80% 50%, 80% 50%, 50% 55%, 20% 50%, 20% 50%, 50% 45%);
 }
 
 // LINES 
@@ -184,4 +181,13 @@ ul {
 .slide-in-left.visible {
   animation: slideInLeft 1s ease-in-out forwards;
   -webkit-animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.bi-chevron-right {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.about-toggle-mobile .bi-chevron-right.chevron-rotate {
+  transform: rotate(90deg) !important;
 }
