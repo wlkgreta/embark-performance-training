@@ -1,0 +1,15 @@
+@use '../base/reset';
+
+#body-contact {
+    background: {
+        image: url(../assets/images/GymHero.jpg);
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
+    }
+}
+
+.contact-bg {
+    background-color: reset.$bg-light;
+}

@@ -1,112 +1,112 @@
 @use '../base/reset';
 
-#about {
-    background-color: reset.$bg-light;
-    border-bottom: reset.$section-border;
+.title-homepage {
+    color: rgba(255, 255, 255, 0.8) !important;
+    z-index: 10;
+    position: relative;
 }
 
-.about-title-homepage {
-    border-left: 10px solid reset.$color-brand-light;
-    span {
-        color: reset.$color-brand;
-    }
-}
-
-
-.about-photo-container {
-    height: inherit;
-    overflow: hidden;
+#body-homepage {
+    position: relative;
     background: {
-        image: url(../assets/images/BarkerLiftHeavyAbout.jpg);
-        size: cover;
+        image: url(../assets/images/GymHero.jpg);
+        position: center;
         repeat: no-repeat;
+        size: cover;
+        attachment: fixed;
     }
-    clip-path: url(#myPolygonClip);
 }
 
-#values-section {
-    background-color: reset.$bg-brand;
-    border-bottom: reset.$section-border;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -10;
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease-out; /* Smooth transition for the opacity change */
 }
 
-#embark-section {
-    background-color: reset.$bg-light;
-    border-bottom: reset.$section-border;
-}
 
 .values-container {
     margin: 30px 0;
     height: 100%;
+    color: white;
+    z-index: 10;
+    position: relative;
+}
+
+.accessible,
+.inclusive,
+.purposeful {
+    padding: 50px 0;
+    border-top: 4px solid reset.$color-brand-light;
+    border-bottom: 4px solid reset.$color-brand-light;
+    p {
+        font-size: 1.1rem;
+    }
 }
 
 .value {
     text-align: center;
-    min-height: 23rem;
-    min-width: 20rem;
-    max-width: 25rem;
-    padding: 1.5rem;
-    margin: 15px;
-    border: 2px solid black;
-    .accessible,
-    .inclusive,
-    .purposeful {
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 3rem;
-    }
+    min-height: 30rem;
+    min-width: 24rem;
+    max-width: 30rem;
+    background-color: transparent;
+    padding: 3rem;
 }
 
-.value-one {
+.accessible-image {
     background: {
         image: url(../assets/images/Bandsuse.jpg);
         size: cover;
         position: cover;
         repeat: no-repeat;
     }
+    min-height: 30rem;
 } 
-.value-two {
+.inclusive-image {
     background: {
         image: url(../assets/images/Athletesuse.jpg);
         size: cover;
         position: center;
         repeat: no-repeat;
     }
+    min-height: 30rem;
 }
-.value-three {
+.purposeful-image {
     background: {
-        image: url(../assets/images/USAWeightliftinguse.jpg);
+        image: url(../assets/images/Podium2use.JPG);
         size: cover;
         position: center;
         repeat: no-repeat;
     }
+    min-height: 30rem;
+}
+
+.embark-steps {
+    color: white;
+    z-index: 10;
+    position: relative;
 }
 
 .step {
     .icon {
         color: transparent; 
-        -webkit-text-stroke: 2px reset.$color-brand-dark;
+        -webkit-text-stroke: 2px reset.$color-brand-light;
     }
 }
 
-
-#carousel {
-    background-color: reset.$bg-brand; 
-    border-bottom: reset.$section-border;
+.testimonial-attribute {
+    flex-direction: column;
 }
 
 
 // MEDIA QUERIES
 
-@media only screen and (max-width: 1200px) {
-    .about-photo-container {
-        height: 400px;
-        clip-path: none;
-    }
-}
-
 @media only screen and (max-width: 992px) {
-    .testimonial-attribute {
-        flex-direction: column;
-    }
     .embark-steps {
         .vertical-line,
         .vr {
@@ -117,22 +117,19 @@
         padding: 0px 50px;
         margin: 20px 0;
     }
-}
-
-@media only screen and (max-width: 380px) {
-    .about-title-homepage {
-        padding-left: 15px !important;
-        h1 {
-            font-size: 1.9rem;
-        }
-        p {
-            font-size: 1.2rem !important;
-        }
+    .accessible-image,
+    .inclusive-image,
+    .purposeful-image {
+        max-width: 30rem;
+        min-height: 20rem;
     }
 
-    .about-info-container {
-        p {
-            font-size: 1.2rem !important;
-        }
+    .value {
+        min-height: 18rem;
+        min-width: 20rem;
+    }
+
+    .value-two {
+        flex-wrap: wrap-reverse;
     }
 }

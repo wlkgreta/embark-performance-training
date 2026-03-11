@@ -3,7 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://wlkgreta.github.io/embark-performance-training/assets/images/Embark1(2).png">
+    <meta property="og:image:type" content="image/png">
+    <meta name="description" content="Embark Performance Training offers customized personal training in Des Moines, IA. Specializing in weightlifting and sports performance, Coach Matthew Barker is a certified strength and conditioning specialist (CSCS) and has a Master's degree in Human Performance. He has experience working with clients of varying skill levels, from the general population to elite athletes at the collegiate, professional, and Olympic level.">
+    <meta property="og:description" content="At Embark Performance Training, we strive to provide our clients with a safe haven of health, strength, and support. We use a holistic approach of scientific support and real world practices to curate the best individualized training programs and address our clients' goals in a responsible, healthy, and sustainable way.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Embark Performance Training">
     <title>Embark Performance Training</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,9 +23,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="./javascript/main.js" defer></script>
   </head>
-  <body>
+  <body id="body-homepage">
         <!--NavBar-->
-        <nav class="navbar navbar-expand-xl sticky-top" role="navigation">
+        <nav class="navbar navbar-home navbar-expand-xl fixed-top" role="navigation">
             <div class="container">
                 <a class="navbar-brand" href="#home">
                     <img src="./assets/images/Embark1(2).png" alt="Embark Performance Training Logo">
@@ -25,9 +33,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="toggle-icon"><i class="bi bi-list"></i></span>
                 </button>
-                <div class="container d-flex text-center">
+                <div class="container d-flex px-0 text-center">
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav nav ms-auto">
+                        <ul class="navbar-nav nav">
                             <div class="row d-flex align-items-center navbar-column">
                                 <div class="col">
                                     <li class="nav-item">
@@ -35,13 +43,28 @@
                                     </li>
                                 </div>
                                 <div class="col">
-                                    <li class="nav-item dropdown">
-                                        <a class="dropdown-toggle nav-link" href="./html/about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">About<i class="bi bi-chevron-down ps-1"></i></a>
+                                    <!--Desktop About Dropdown-->
+                                    <li class="nav-item dropdown about-toggle">
+                                        <a class="dropdown-toggle nav-link ps-3 about-toggle" href="./html/about.html" role="button" aria-expanded="false">About<i class="bi bi-chevron-down ps-1"></i></a>
                                         <ul class="dropdown-menu dropdown-menu-dark text-center text-uppercase">
                                             <li><a class="dropdown-item" href="./html/about.html#mission">Mission</a></li>
                                             <li><a class="dropdown-item" href="./html/about.html#about-coach">Coach Barker</a></li>
-                                            <li><a class="dropdown-item" href="./html/about.html#gym">The Gym</a></li>                              <li><a class="dropdown-item" href="./html/about.html#testimonials">Testimonials</a></li>
+                                            <li><a class="dropdown-item" href="./html/about.html#gym">The Gym</a></li>                          
+                                            <li><a class="dropdown-item" href="./html/about.html#testimonials">Testimonials</a></li>
                                         </ul>
+                                    </li>
+                                    <!--Mobile About Dropdown-->
+                                    <li class="nav-item dropdown about-toggle-mobile">
+                                        <a class="dropdown-toggle nav-link ps-3 collapsed" role="button" aria-expanded="false" data-bs-toggle="collapse" data-bs-target="#aboutDropdown" aria-controls="aboutDropdown" aria-label="Toggle About Page Options">About<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right ps-2" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                                    </svg></a>
+                                        <div class="collapse" id="aboutDropdown">
+                                            <ul class="dropdown-menu dropdown-menu-dark text-center text-uppercase">
+                                                <li><a class="dropdown-item" href="./html/about.html#mission">Mission</a></li>
+                                                <li><a class="dropdown-item" href="./html/about.html#about-coach">Coach Barker</a></li>
+                                                <li><a class="dropdown-item" href="./html/about.html#gym">The Gym</a></li>                     
+                                                <li><a class="dropdown-item" href="./html/about.html#testimonials">Testimonials</a></li>
+                                            </ul>
+                                        </div>
                                     </li>
                                 </div>
                                 <div class="col">
@@ -51,7 +74,7 @@
                                 </div>
                                 <div class="col">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./html/social.html">Social Feeds</a>
+                                        <a class="nav-link" href="./html/social.html">Social</a>
                                     </li>
                                 </div>
                                 <div class="col">
@@ -68,350 +91,364 @@
                 </div>
             </div>
         </nav>
-
-        <!--Hero-->
-        <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
-            <div class="container appear-on-scroll">
-                <div class="row">
-                    <div class="col-12 hero-text">
-                        <img class="hero-logo" src="./assets/images/Embark1 Outline hero.png" alt="Embark Performance Training Logo">
+        <main role="main">
+            <div class="overlay"></div>
+            <!--Hero-->
+            <section id="hero" class=" d-flex align-items-center text-center">
+                <div class="container appear-on-scroll hero-text">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="hero-logo" src="./assets/images/Embark1 Outline hero.png" alt="Embark Performance Training Logo">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 d-flex hero-btn">
+                            <a href="./html/programs.html" class="btn btn-brand mx-auto">Get Lifting</a>
+                            <a href="./html/about.html" class="btn btn-secondary mx-auto">About Us</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 d-flex hero-btn">
-                        <a href="./html/programs.html" class="btn btn-brand mx-auto">Get Lifting</a>
-                        <a href="./html/about.html" class="btn btn-secondary mx-auto">About Us</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <div class="container-fluid">
-            <div class="row divider background-noise">
-            </div>
-        </div>
-
-        <!--Homepage About Section-->
-        <section id="about">
             <div class="container-fluid">
-                <div class="row d-flex flex-wrap about-container">
-                    <!--About Text-->
-                    <div class="col-12 col-xl-7 py-5 about-info-container"> 
-                        <div class="row d-flex justify-content-center mb-5">
-                            <div class="col-12 col-sm-11 col-xl-8 text-start about-title-homepage slide-in-left ps-4 ms-4 ms-sm-5">
-                                <h1 class="display-4 fw-semibold text-uppercase pt-2">Get <span>Stronger</span> and <br>Reach Your Goals</h1>
-                                <p class="fs-3 fw-light text-uppercase pb-2">with Coach Matthew Barker</p>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center about-text-homepage appear-on-scroll">
-                            <div class="col-11 col-xl-8">
-                                <p class="fs-4 fw-light lh-sm lead ms-2 mx-sm-5">Looking to get stronger? Improve your mobility? Find a workout plan that fits your lifestyle? Look no further than <strong>Embark Performance Training!</strong></p>
-                                <div class="d-flex mt-4 align-items-center justify-content-center">
-                                    <a href="./html/about.html" class="btn btn-brand mx-0 mx-sm-5" style="width: 100%;">Learn More</a>
+                <div class="row divider">
+                </div>
+            </div>
+            <!--Values Section-->
+            <section id="values-section" class="section-padding">
+                <div class="container">
+                    <div class="row d-flex justify-content-start ms-1 mb-5">
+                        <div class="col-12 text-start mx-0 px-0">
+                            <div class="title-box">
+                                <div class="title-line-horizontal"></div>
+                                <div class="title-line-thin"></div>
+                                <div class="title-line-short"></div>
+                                <div class="title-line-long"></div>
+                                <div class="title-line-long"></div>
+                                <div class="title-line-long"></div>
+                                <h2 class="display-4 title title-homepage ms-4 me-3 pt-1">Strength Training Designed for You</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!--About Photo-->
-                    <div class="col-12 col-xl-5 about-photo-container">
-                        <svg width="0" height="0">
-                            <clipPath id="myPolygonClip" clipPathUnits="objectBoundingBox">
-                                <polygon points="1 0, 1 0.5, 1 1, 0 1, 0.1 0.5, 0 0" />
-                            </clipPath>
-                        </svg>
-                    </div>
                 </div>
-            </div>
-        </section>
-        <!--Values Section-->
-        <section id="values-section" class="section-padding background-noise">
-            <div class="container">
-                <div class="row d-flex justify-content-start ms-1 mb-5">
-                    <div class="col-12 text-start mx-0 px-0">
-                        <div class="title-box">
-                            <div class="title-line-horizontal"></div>
-                            <div class="title-line-thin"></div>
-                            <div class="title-line-short"></div>
-                            <div class="title-line-long"></div>
-                            <div class="title-line-long"></div>
-                            <div class="title-line-long"></div>
-                            <h2 class="display-4 title ms-4 me-3 pt-1">Strength Training Designed for You</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row values-container">
-                    <div class="col-12">
-                        <div class="row d-flex flex-wrap justify-content-center">
-
+                <div class="container">
+                    <div class="row values-container justify-content-center">
+                        <div class="col">
                             <!--Accessible-->
-                            <div class="col-11 col-md-8 col-lg-5 col-xl-4 appear-on-scroll align-content-center value value-one">
-                                <div class="accessible">
-                                    <h3 class="text-uppercase display-6 fw-normal pb-2">Accessible</h3>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis numquam sequi nobis!</p>
+                            <div class="row justify-content-center mb-5 value-one appear-on-scroll">
+                                <div class="col-12 col-lg-5 align-content-center value me-lg-5">
+                                    <div class="accessible">
+                                        <h3 class="display-6 fw-normal pb-2">Accessible</h3>
+                                        <p>We adapt all strength exercises to accommodate your physical needs while still challenging and working towards your goals.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 accessible-image">
                                 </div>
                             </div>
-
                             <!--Inclusive-->
-                            <div class="col-11 col-md-8 col-lg-5 col-xl-4 appear-on-scroll-two align-content-center value value-two">
-                                <div class="inclusive">
-                                    <h3 class="text-uppercase display-6 fw-normal pb-2">Inclusive</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus accusantium nihil?</p>
+                            <div class="row justify-content-center mb-5 value-two appear-on-scroll">
+                                <div class="col-lg-5 inclusive-image">
+                                </div>
+                                <div class="col-12 col-lg-5 align-content-center value ms-lg-5">
+                                    <div class="inclusive">
+                                        <h3 class="display-6 fw-normal pb-2">Inclusive</h3>
+                                        <p>We welcome all bodies, genders, and strength-levels. Novice to professional, everyday to competition weightlifting.</p>
+                                    </div>
                                 </div>
                             </div>
-
                             <!--Purposeful-->
-                            <div class="col-11 col-md-8 col-lg-5 col-xl-4 appear-on-scroll-three align-content-center value value-three">
-                                <div class="purposeful">
-                                    <h3 class="text-uppercase display-6 fw-normal pb-2">Purposeful</h3>
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit eaque consequuntur quasi?</p>
+                            <div class="row justify-content-center mb-2 value-three appear-on-scroll">
+                                <div class="col-12 col-lg-5 align-content-center value me-lg-5">
+                                    <div class="purposeful">
+                                        <h3 class="display-6 fw-normal pb-2">Purposeful</h3>
+                                        <p>We design your program and each session specifically for your strength and fitness goals. One-size does not fit all.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 purposeful-image">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--Embark On Your Journey Section-->
-        <section id="embark-section" class="section-padding">
-            <div class="container">
-                <div class="row d-flex justify-content-start ms-1 mb-5">
-                    <div class="col-12 text-start mx-0 px-0">
-                        <div class="title-box">
-                            <div class="title-line-horizontal"></div>
-                            <div class="title-line-thin"></div>
-                            <div class="title-line-short"></div>
-                            <div class="title-line-long"></div>
-                            <div class="title-line-long"></div>
-                            <div class="title-line-long"></div>
-                            <h2 class="display-4 title mx-4 pt-1">Embark on Your Fitness Journey</h2>
+            <div class="container-fluid">
+                <div class="row divider">
+                </div>
+            </div>
+
+            <!--Embark On Your Journey Section-->
+            <section id="embark-section" class="section-padding">
+                <div class="container">
+                    <div class="row d-flex justify-content-start ms-1 mb-5">
+                        <div class="col-12 text-start mx-0 px-0">
+                            <div class="title-box">
+                                <div class="title-line-horizontal"></div>
+                                <div class="title-line-thin"></div>
+                                <div class="title-line-short"></div>
+                                <div class="title-line-long"></div>
+                                <div class="title-line-long"></div>
+                                <div class="title-line-long"></div>
+                                <h2 class="display-4 title title-homepage mx-4 pt-1">Embark on Your Fitness Journey</h2>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container embark-steps">
-                <!--Select Program-->
-                <div class="row d-flex flex-wrap text-center justify-content-center align-items-center my-3">
-                    <div class="col-11 col-lg-3 step appear-on-scroll program">
-                        <div class="icon">
-                            <i class="fa-solid fa-dumbbell"></i>
-                        </div>
-                        <br>
-                        <h5>Select a Program</h5>
-                        <div>
-                            <p>We offer in-person lifting programs as well as written programs individualized to your goals and available equipment. Click below to see all programs and pricing!</p>
+                <div class="container embark-steps">
+                    <!--Select Program-->
+                    <div class="row d-flex flex-wrap text-center justify-content-center align-items-center my-3">
+                        <div class="col-11 col-lg-3 step appear-on-scroll program">
+                            <div class="icon">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </div>
+                            <br>
+                            <h3 class="fs-5">Select a Program</h3>
                             <div>
-                                <a href="./html/programs.html" class="btn btn-brand">Programs</a>
+                                <p>We offer in-person weightlifting programs as well as written programs individualized to your goals and available equipment. Click below to see programs & pricing!</p>
+                                <div>
+                                    <a href="./html/programs.html" class="btn btn-brand">Programs</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-1 d-flex ps-5 vertical-line" style="height: 200px;">
-                        <div class="vr"></div>
-                    </div>
-
-                <!--Inquire-->
-                    <div class="col-11 col-lg-3 step appear-on-scroll-two inquire">
-                        <div class="icon">
-                            <i class="fa-solid fa-paper-plane"></i>
+                        <div class="col-lg-1 d-flex ps-5 vertical-line" style="height: 200px;">
+                            <div class="vr"></div>
                         </div>
-                        <br>
-                        <h5>Inquire</h5>
-                        <p>Fill out the inquiry form and let us know what kind of program you're interested in. Coach Barker will then set up a time to chat about your goals and availability.</p>
-                        <div>
-                            <a href="./html/form.html" class="btn btn-brand">Inquiry Form</a>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-1 d-flex ps-5 vertical-line" style="height: 200px;">
-                        <div class="vr"></div>
-                    </div>
-
-                <!--Questions-->
-                    <div class="col-11 col-lg-3 step appear-on-scroll-three questions">
-                        <div class="icon">
-                            <i class="fa-solid fa-circle-question"></i>
-                        </div>
-                        <br>
-                        <h5>Questions?</h5>
-                        <p>Still unsure what program would be best for you based on your goals? Got a question that hasn't been answered here? Shoot us an email!</p>
-                        <div>
-                            <a href="./html/contact.html" class="btn btn-brand">Email Us</a>
-                        </div>
-                    </div>
-            </div>
-        </section>
-
-        <!--Testimonials Carousel-->
-        <section id="carousel" class="section-padding background-noise">
-            
-            <!--Testimonial Title-->
-            <div class="container">
-                <div class="row d-flex justify-content-start ms-1 mb-5">
-                    <div class="col-12 text-start mx-0 px-0">
-                        <div class="title-box">
-                            <div class="title-line-horizontal"></div>
-                            <div class="title-line-thin"></div>
-                            <div class="title-line-short"></div>
-                            <div class="title-line-long"></div>
-                            <div class="title-line-long"></div>
-                            <div class="title-line-long"></div>
-                            <h2 class="display-4 title mx-4 pt-1">What Clients are Saying</h2>
+                    <!--Inquire-->
+                        <div class="col-11 col-lg-3 step appear-on-scroll-two inquire">
+                            <div class="icon">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                            <br>
+                            <h3 class="fs-5">Inquire</h3>
+                            <p>Fill out the inquiry form and let us know what kind of program you're interested in. Coach Barker will then set up a time to chat about your goals and availability.</p>
+                            <div>
+                                <a href="./html/form.html" class="btn btn-brand">Inquiry Form</a>
                             </div>
                         </div>
-                    </div>
+
+                        <div class="col-lg-1 d-flex ps-5 vertical-line" style="height: 200px;">
+                            <div class="vr"></div>
+                        </div>
+
+                    <!--Questions-->
+                        <div class="col-11 col-lg-3 step appear-on-scroll-three questions">
+                            <div class="icon">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </div>
+                            <br>
+                            <h3 class="fs-5">Questions?</h3>
+                            <p>Still unsure what program would be best for you based on your goals? Have a question that hasn't been answered here? Shoot us an email!</p>
+                            <div>
+                                <a href="./html/contact.html" class="btn btn-brand">Email Us</a>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+            <div class="container-fluid">
+                <div class="row divider">
                 </div>
             </div>
-            
-            <div id="carouselExampleIndicators" class="container carousel slide px-2 px-xl-5" data-bs-theme="dark">
-               
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
 
-                <!--Testimonial Content-->
-                <div class="carousel-inner">
-
-                    <!--Testimonial 1-->
-                    <div class="carousel-item active">
-                        <br>
-                        <div class="container">
-                            <div class="row d-flex justify-content-center">
-                                <div class="d-flex col-12 mb-2 align-items-center justify-content-center">
-                                    <div class="line me-4"></div>
-                                    <i class="bi bi-quote display-1" style="color: rgba(0, 0, 0, 0.7);"></i>
-                                    <div class="line ms-4"></div>
-                                </div>
-                                <div class="col-11 col-lg-8 text-center text-black">
-                                    <h5 class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, deleniti aliquid debitis voluptate nemo eius!</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="container pb-5 pt-2">
-                            <div class="row testimonial-attribute d-flex justify-content-center text-center align-items-center">
-                                <div class="col-md-6 col-xl-3">
-                                    <img height="200" style="border-radius: 50%; border: 3px solid black;" src="./assets/images/liftertestimonial.jpg" alt="">
-                                </div>
-                                <div class="col-xl-3  pt-4">
-                                    <h4 class="fw-semibold text-uppercase text-black">Whitney Greta</h4><h5 class="fw-light fst-italic text-uppercase text-black">medalist winner</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Testimonial 2-->
-                    <div class="carousel-item">
-                        <br>
-                        <div class="container">
-                            <div class="row d-flex justify-content-center">
-                                <div class="d-flex col-12 mb-2 align-items-center justify-content-center">
-                                    <div class="line me-4"></div>
-                                    <i class="bi bi-quote display-1" style="color: rgba(0, 0, 0, 0.7);"></i>
-                                    <div class="line ms-4"></div>
-                                </div>
-                                <div class="col-11 col-lg-8  text-center text-black">
-                                    <h5 class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, deleniti aliquid debitis voluptate nemo eius!</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="container pb-5 pt-2">
-                            <div class="row testimonial-attribute d-flex justify-content-center text-center align-items-center">
-                                <div class="col-md-6 col-xl-3">
-                                    <img height="200" style="border-radius: 50%; border: 3px solid black;" src="./assets/images/liftertestimonial.jpg" alt="">
-                                </div>
-                                <div class="col-xl-3  pt-4">
-                                    <h4 class="fw-semibold text-uppercase text-black">Whitney Greta</h4><h5 class="fw-light fst-italic text-uppercase text-black">medalist winner</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--Testimonial 3-->
-                    <div class="carousel-item">
-                        <br>
-                        <div class="container">
-                            <div class="row d-flex justify-content-center">
-                                <div class="d-flex col-12 mb-2 align-items-center justify-content-center">
-                                    <div class="line me-4"></div>
-                                    <i class="bi bi-quote display-1" style="color: rgba(0, 0, 0, 0.7);"></i>
-                                    <div class="line ms-4"></div>
-                                </div>
-                                <div class="col-11 col-lg-8 text-center text-black">
-                                    <h5 class="fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, deleniti aliquid debitis voluptate nemo eius!</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                        <div class="container pb-5 pt-2">
-                            <div class="row testimonial-attribute d-flex justify-content-center text-center align-items-center">
-                                <div class="col-md-6 col-xl-3">
-                                    <img height="200" style="border-radius: 50%; border: 3px solid black;" src="./assets/images/liftertestimonial.jpg" alt="">
-                                </div>
-                                <div class="col-xl-3  pt-4">
-                                    <h4 class="fw-semibold text-uppercase text-black">Whitney Greta</h4><h5 class="fw-light fst-italic text-uppercase text-black">medalist winner</h5>
+            <!--Testimonials Carousel-->
+            <section id="carousel" class="section-padding">
+                
+                <!--Testimonial Title-->
+                <div class="container">
+                    <div class="row d-flex justify-content-start ms-1 mb-5">
+                        <div class="col-12 text-start mx-0 px-0">
+                            <div class="title-box">
+                                <div class="title-line-horizontal"></div>
+                                <div class="title-line-thin"></div>
+                                <div class="title-line-short"></div>
+                                <div class="title-line-long"></div>
+                                <div class="title-line-long"></div>
+                                <div class="title-line-long"></div>
+                                <h2 class="display-4 title title-homepage mx-4 pt-1">What Clients are Saying</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <div id="carouselExampleIndicators" class="container carousel slide col-lg-7 px-2 px-xl-5">
+                
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
 
-                <!--Carousel Buttons-->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+                    <!--Testimonial Content-->
+                    <div class="carousel-inner">
 
-            <div class="container">
-                <div class="row d-flex text-center">
-                    <div class="col-12">
-                            <a href="./html/about.html#testimonials" class="btn btn-secondary mt-4 mx-auto px-4" style="background-color: rgba(0, 0, 0, 0.5);">Read More<i class="bi bi-arrow-right ps-3"></i></a>
+                        <!--Testimonial-->
+                        <div class="carousel-item active">
+                            <br>
+                            <div class="container">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="d-flex col-12 mb-2 align-items-center justify-content-center">
+                                        <div class="line me-4"></div>
+                                        <i class="bi bi-quote display-1"></i>
+                                        <div class="line ms-4"></div>
+                                    </div>
+                                    <div class="col-12 col-lg-8 text-center">
+                                        <p class="fw-light">What impressed me most was his ability to work around existing injuries while still driving meaningful progress in strength, power, and technical consistency. Every phase of the program felt purposeful, balancing performance gains with sustainability and training health. [...]</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="container pb-5 pt-2">
+                                <div class="row testimonial-attribute d-flex justify-content-center text-center align-items-center">
+                                    <div class="col">
+                                        <img height="200" style="border-radius: 50%; border: 3px solid lightgray;" src="./assets/images/Zach Testimonial.jpeg" alt="Photo of Zach Fears for Client Testimonial">
+                                    </div>
+                                    <div class="col pt-4">
+                                        <p class="fw-semibold fs-5 mb-0">Dr. Zach Fears</p><p class="fw-light fst-italic fs-6">DSL SCCC RSCC*D CSCS USAW-1 FRCms CAFS 3DMAPS PN1-NC</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Testimonial-->
+                        <div class="carousel-item">
+                            <br>
+                            <div class="container">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="d-flex col-12 mb-2 align-items-center justify-content-center">
+                                        <div class="line me-4"></div>
+                                        <i class="bi bi-quote display-1"></i>
+                                        <div class="line ms-4"></div>
+                                    </div>
+                                    <div class="col-12 col-lg-8 text-center">
+                                        <p class="fw-light">I attend Duo Sessions with my husband and Coach Barker does a great job of individualizing each of our workouts to our needs and abilities. I feel stronger and more confident!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="container pb-5 pt-2">
+                                <div class="row testimonial-attribute d-flex justify-content-center text-center align-items-center">
+                                    <div class="col-xl-4">
+                                        <img height="200" style="border-radius: 50%; border: 3px solid lightgray;" src="./assets/images/Whitney.png" alt="Photo of Whitney G. for Client Testimonial">
+                                    </div>
+                                    <div class="col-xl-3  pt-4">
+                                        <p class="fw-semibold fs-5 mb-0">Whitney G.</p><p class="fw-light fst-italic fs-6">Client since 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Testimonial-->
+                        <div class="carousel-item">
+                            <br>
+                            <div class="container">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="d-flex col-12 mb-2 align-items-center justify-content-center">
+                                        <div class="line me-4"></div>
+                                        <i class="bi bi-quote display-1"></i>
+                                        <div class="line ms-4"></div>
+                                    </div>
+                                    <div class="col-12 col-lg-8 text-center">
+                                        <p class="fw-light">Coach Barker is awesome! I was initially hesitant to try weightlifting because it can feel like an intimidating and non-beginner-friendly activity, but Coach Barker really does a great job of combining his in-depth coaching knowledge with a very welcoming attitude and gym environment. I can personally say that I have greatly benefited lifting with Coach Barker over the past several years, not just because of the strength I've gained, but because he is a true joy to work with!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="container pb-5 pt-2">
+                                <div class="row testimonial-attribute d-flex justify-content-center text-center align-items-center">
+                                    <div class="col">
+                                        <img height="200" style="border-radius: 50%; border: 3px solid lightgray;" src="./assets/images/Lucasuse.jpg" alt="Photo of Lucas G. for Client Testimonial">
+                                    </div>
+                                    <div class="col pt-4">
+                                        <p class="fw-semibold fs-5 mb-0">Lucas G.</p><p class="fw-light fst-italic fs-6">Client since 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Testimonial-->
+                        <div class="carousel-item">
+                            <br>
+                            <div class="container">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="d-flex col-12 mb-2 align-items-center justify-content-center">
+                                        <div class="line me-4"></div>
+                                        <i class="bi bi-quote display-1"></i>
+                                        <div class="line ms-4"></div>
+                                    </div>
+                                    <div class="col-12 col-lg-8 text-center">
+                                        <p class="fw-light">I have worked with Matt for about 3 or 4 years now and let me tell you - 10 out of 10 recommend. This is the strongest and leanest I have been in my life. I highly recommend working with him!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="container pb-5 pt-2">
+                                <div class="row testimonial-attribute d-flex justify-content-center text-center align-items-center">
+                                    <div class="col-xl-4">
+                                        <img height="200" style="border-radius: 50%; border: 3px solid lightgray;" src="./assets/images/Steven_Testimonial.jpeg" alt="Photo of Steven T. for Client Testimonial">
+                                    </div>
+                                    <div class="col-xl-3  pt-4">
+                                        <p class="fw-semibold fs-5 mb-0">Steven T.</p><p class="fw-light fst-italic fs-6">Client since 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Carousel Buttons-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="container">
+                    <div class="row d-flex text-center">
+                        <div class="col-12">
+                                <a href="./html/about.html#testimonials" class="btn btn-brand mt-4 mx-auto px-4" >Read More<i class="bi bi-arrow-right ps-3"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+        </main>
 
-        </section>
+        <!--Footer-->
+        <footer class="border-top" role="contentinfo">
+                <div class="container">
+                    <section>
+                        <ul class="nav list-unstyled justify-content-center py-2">
+                            <!--Instagram-->
+                            <li class="icon">
+                                <a href="https://www.instagram.com/embark_performance/" target="_blank"><i class="bi bi-instagram"></i></a>
+                            </li>
+                            <!--Twitch-->
+                            <li class="ms-5 icon">
+                                <a href="https://www.twitch.tv/coachembark" target="_blank"><i class="me-3 bi bi-twitch"></i></a>
+                            </li>
+                            <!--Email-->
+                            <li class="ms-4 icon">
+                                <a href="./html/contact.html"><i class="bi bi-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
 
-    <!--Footer-->
-    <footer class="border-top">
-            <div class="container">
-                <section>
-                    <ul class="nav list-unstyled justify-content-center py-2">
-                        <!--Instagram-->
-                        <li class="icon">
-                            <a href="https://www.instagram.com/embark_performance/" target="_blank"><i class="bi bi-instagram"></i></a>
-                        </li>
-                        <!--Twitch-->
-                        <li class="ms-5 icon">
-                            <a href="https://www.twitch.tv/coachembark" target="_blank"><i class="me-3 bi bi-twitch"></i></a>
-                        </li>
-                        <!--Email-->
-                        <li class="ms-4 icon">
-                            <a href=""><i class="bi bi-envelope"></i></a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-
-            <div class="text-center text-dark p-3 copyright" style="font-size: 0.9rem;opacity: 0.4;">© 2025 Embark Performance Training, LLC<br>Website by Whitney Greta</div>
-    </footer>
+                <div class="text-center text-dark p-3 copyright" style="font-size: 0.9rem;opacity: 0.4;">© 2025 Embark Performance Training, LLC<br>Website by Whitney Greta</div>
+        </footer>
         
-  </body>
+    </body>
 </html>
 
