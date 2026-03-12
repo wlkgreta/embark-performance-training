@@ -11902,6 +11902,11 @@ textarea.form-control-lg {
   color: white;
 }
 
+@media only screen and (max-width: 400px) {
+  .carousel-control-prev, .carousel-control-next {
+    width: 20%;
+  }
+}
 /*$bg-brand: rgb(107, 20, 161);*/
 /* $bg-brand: rgb(136, 78, 170); */
 /*$bg-brand:rgba(107, 20, 161, 0.65);*/
