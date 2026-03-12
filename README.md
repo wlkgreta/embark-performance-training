@@ -4,7 +4,7 @@ A responsive website for a local Des Moines small business
 
 ## Description
 
-The goal of this project was to create increased visibility for Embark Performance Training by creating their first website. From start to finish, Figma wireframes to functioning website, I collaborated with the business owner on branding and design. The site is still in production. Once the site is complete, I will connect to custom domain and track site traffic and events using Google Analytics.
+The goal of this project was to create increased visibility for Embark Performance Training by creating their first website. From start to finish, Figma wireframes to functioning website, I collaborated with the business owner on branding and design. We also created and connected the site to a custom domain and host through Github Pages. Recently added to Google Search Console and will track site data using Google Analytics.
 
 ## Technologies
 
