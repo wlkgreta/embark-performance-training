@@ -12065,7 +12065,6 @@ nav {
     justify-content: center;
   }
   .navbar-column {
-    flex-direction: column;
     margin: 5px 0 0 0;
     width: inherit;
     text-align: center;
@@ -12080,6 +12079,11 @@ nav {
   .about-toggle-mobile {
     visibility: visible;
     display: block;
+  }
+}
+@media only screen and (min-height: 500px) {
+  .navbar-column {
+    flex-direction: column;
   }
 }
 /*$bg-brand: rgb(107, 20, 161);*/

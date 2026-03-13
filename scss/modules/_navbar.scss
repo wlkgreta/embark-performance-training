@@ -118,7 +118,6 @@ nav {
     }
 
     .navbar-column {
-        flex-direction: column;
         margin: 5px 0 0 0;
         width: inherit;
         text-align: center;
@@ -136,3 +135,8 @@ nav {
     }
 }
 
+@media only screen and (min-height: 500px) {
+    .navbar-column {
+        flex-direction: column;
+    }
+}
