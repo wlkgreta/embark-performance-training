@@ -113,10 +113,15 @@ nav {
 
 
 @media only screen and (max-width: 1200px) {
+    .navbar-nav {
+        justify-content: center;
+    }
+
     .navbar-column {
         flex-direction: column;
-        margin-top: 5px;
-        width: 100vw;
+        margin: 5px 0 0 0;
+        width: inherit;
+        text-align: center;
         .nav-item {
             padding: 6px;
         }
